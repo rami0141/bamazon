@@ -117,19 +117,6 @@ function startShopping() {
   });
 } 
 
-// var newStock = res[0].stock_quantity - answer.how_many;
-
-// connection.query("UPDATE products SET stock_quantity = " + newStock + "WHERE item_id = " + answer.how_many, function(err, res) {
-//   if (err) throw err;
-//   console.log("Your order has been processed");
-// });
-
- // // updating database
- //          connection.query("UPDATE * FROM products SET ? WHERE ?", [{ 
- //            stock_quantity: res[0].stock_quantity - answer.how_many 
- //          }, {
- //            item_id: answer.product_ID
- //            }]),
 
 //function that promps user to keep shopping
 
