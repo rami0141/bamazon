@@ -110,7 +110,7 @@ function startShopping() {
           var newStock = res[0].stock_quantity - answer.how_many;
           //updating the database
           connection.query('UPDATE products SET Stock_quantity = stock_quantity - ' + answer.how_many + ' WHERE item_id = ' + answer.product_ID);
-          console.log("Updated Stock Inventory" + newStock);
+          console.log("Updated Stock Inventory: " + newStock "\n");
         }
         keepShopping();
       });
