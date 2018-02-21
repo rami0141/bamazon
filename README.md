@@ -1,5 +1,5 @@
 
-#Bamazon Customer View
+# Bamazon Customer View
 
 Bamazon is an Amazon-like storefront build using node.js, mySQL and inquirer. The app will take in orders from customers and deplete stock from the store's inventory.
 
@@ -11,16 +11,21 @@ Bamazon is an Amazon-like storefront build using node.js, mySQL and inquirer. Th
 3. The products table has each of the following columns:
 	
 	*item_id (unique id for each product)
+
 	*product_name (Name of product)
+
 	*department_name
+
 	*price (cost to customer)
+
 	*stock_quantity (how much of the product is available in stores)
 
 ![Image of starting inventory](images/inventory1.JPG)
 
 4. Populated this database with 11 different products. 
 
-##Node Application
+## Node Application
+
 Created a Node application called bamazonCustomer.js. When first running this application, the user will get the option to view all inventory.
 
 ![Image of app](images/startShopping.JPG)
@@ -36,10 +41,10 @@ Once the customer has placed the order, the application checks if the store has 
 
 If not, the app will log the phrase "Insufficient quantity!", and then prevent the order from going through.
 
-If yes, mySQL database will reflect the remaining quantity after subtracting the amount of a product bought by the user.
-The customer is given a total cost of their purchase.
+If yes, mySQL database will reflect the remaining quantity after subtracting the amount of a product bought by the user.  The application will log the chosen product's name and price per unit. The customer is also given a total cost of the purchase.
 
 ![Image of app checking inventory](images/ending.JPG)
 
 ![Image of updated inventory](images/inventory2.JPG)
+
 
